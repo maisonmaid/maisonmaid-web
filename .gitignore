@@ -20,7 +20,7 @@ yarn-error.log*
 
 # --- Build Output ---
 # もしビルドツール（Vite, Webpack等）を使う場合
-dist/*
+dist/
 build/
 out/
 
