@@ -1,0 +1,32 @@
+# --- VS Code specific ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Web Development / Node ---
+# もし今後、Sassのコンパイルやパッケージ管理を行う場合
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+
+# --- Build Output ---
+# もしビルドツール（Vite, Webpack等）を使う場合
+dist/*
+build/
+out/
+
+# --- Project Specific ---
+# テンプレートの元データやバックアップなどを除外したい場合（必要に応じて）
+# *.zip
+# *.rar
+
+template/
