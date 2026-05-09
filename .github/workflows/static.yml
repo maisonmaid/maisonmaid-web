@@ -34,7 +34,9 @@ jobs:
           rm -rf site
           mkdir -p site
           cp -r docs/* site/
-          cp -r src/* site/
+
+          find site -name "*.html" -exec sed -i \
+            's|\.\./src/img/|https://img.maisonmaid.com/|g' {} +
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
