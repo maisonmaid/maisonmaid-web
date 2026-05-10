@@ -36,7 +36,7 @@ jobs:
           cp -r docs/* site/
 
           find site -name "*.html" -exec sed -i \
-            's|\.\./src/img/|https://img.maisonmaid.com/|g' {} +
+            's|\.\./\.\./src/img/|https://img.maisonmaid.com/|g' {} +
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
