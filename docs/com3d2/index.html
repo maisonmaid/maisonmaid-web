@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="../../src/img/com3d/favicon.png" rel="icon">
+  <title>MaisonMaid | Unofficial COM3D2 Fan Site</title>
+  <meta name="description"
+    content="MaisonMaidはCUSTOM ORDER MAID 3D2（COM3D2）の非公式ファンサイトです。メイド検索、プリセット紹介、性格・ボイス解説、初心者向けガイドなどを掲載しています。">
+  <meta name="author" content="MaisonMaid">
+
+  <!-- Stylesheet
+	============================== -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/glightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/daterangepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper
+	=============================== -->
+  <div id="main-wrapper">
+    <!-- Header
+		============================ -->
+    <header id="header" class="sticky-top-slide">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-3 fw-600 mt-3">
+        <div class="container">
+          <!-- Logo -->
+          <a class="logo" href="index.html"> <img src="../../src/img/com3d/logo.png" alt=""> </a>
+          <!-- Logo End -->
+          <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="dropdown-item" href="index.html" title="トップページ">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="concept.html" title="コンセプト">Concept</a></li>
+              <li class="nav-item"><a class="nav-link" href="cast.html" title="キャスト">Cast</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="faqs.html" title="よくある質問と回答">FAQs</a></li>
+              
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" title="情報">Information</a>
+                <ul class="dropdown-menu">
+                  <li> <a class="dropdown-item" href="info.html">プライバシーポリシー</a></li>
+                  <li> <a class="dropdown-item" href="info.html">免責事項</a></li>
+                  <li> <a class="dropdown-item" href="info.html">お問い合わせ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Button -->
+          <a href="https://www.kisskiss.tv/" target="_blank"
+            class="btn btn-new btn-primary text-capitalize rounded-pill text-nowrap ms-auto">
+            <span class="btn-text"><span>KISS Official</span></span>
+            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <!-- Button End -->
+
+          <!-- Hamburger Menu Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+          <!-- Hamburger Menu Button End -->
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+		============================================= -->
+    <div id="content" role="main">
+
+      <!-- Intro
+			============================================= -->
+      <section class="hero-wrap">
+        <div class="hero-mask bg-dark opacity-6"></div>
+        <div class="hero-bg" style="background-image:url('../../src/img/com3d/slider/slide-1.jpg');"></div>
+        <div class="hero-content section pb-0 d-flex flex-column min-vh-100">
+          <div class="container my-auto py-5 text-center">
+            <p class="text-3 text-light text-uppercase fw-600 ls-2 wow fadeInUp">
+              <span class="rounded-pill border border-white border-opacity-50 px-3 py-1">LUXURY MAID EXPERIENCE</span>
+            </p>
+            <h1 class="heading-font-family text-19 fw-700 text-white wow fadeInUp" data-wow-delay=".2s" style="text-shadow: 3px 3px 5px #000;">理想のメイドに、
+              <br>もっと出会いやすく。
+            </h1>
+
+            <!-- Booking Form -->
+            <form id="castSearch" action="cast.html" method="get">
+              <div class="intro-booking-form bg-black bg-opacity-75 rounded-pill p-4 p-lg-3 mt-4 wow fadeInUp"
+                data-wow-delay=".4s">
+                <div class="row gy-3 gx-lg-0 input-group">
+                  <div class="col-md-6 col-lg">
+                    <select class="form-select rounded-pill h-100" id="distance" name="distance">
+                      <option value="">[距離感]</option>
+                      <option value="high">近め</option>
+                      <option value="mid">中間</option>
+                      <option value="low">遠め</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 col-lg">
+                    <select class="form-select rounded-pill h-100" id="comfort" name="comfort">
+                      <option value="">[安心感]</option>
+                      <option value="high">高</option>
+                      <option value="mid">中</option>
+                      <option value="low">低</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 col-lg">
+                    <select class="form-select rounded-pill h-100" id="fatigue" name="fatigue">
+                      <option value="">[疲れやすさ]</option>
+                      <option value="high">高</option>
+                      <option value="mid">中</option>
+                      <option value="low">低</option>
+                    </select>
+                  </div>
+                  <div class="col-md-7 col-lg col-xl-auto d-grid">
+                    <button class="btn btn-primary text-nowrap rounded-pill" type="submit">Find Your Cast</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Booking Form end -->
+          </div>
+        </div>
+      </section>
+      <!-- Intro end -->
+
+      <!-- About
+			============================================= -->
+      <section class="section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInLeft">
+              <!-- Heading -->
+              <p><span
+                  class="text-3 text-uppercase fw-600 rounded-pill border border-dark border-opacity-10 px-3 py-1">ABOUT
+                  MAISON MAID</span></p>
+              <h2 class="heading-font-family text-13 fw-600 lh-sm mb-4">理想の<span
+                  class="text-primary">メイド</span>と、<br>出会うために。</h2>
+              <!-- Heading End -->
+
+              <p class="text-5 text-body-secondary">MaisonMaidは、CUSTOM ORDER MAID 3D2 の非公式ファンサイトです。</p>
+              <p class="text-body-secondary mb-4">魅力的なメイドさんが数多く存在する一方で、<br>
+                「どの子が自分に合うのか分からない」<br>
+                そんな風に感じたことはありませんか？<br><br>
+
+                性格、距離感、声、シナリオ。<br>
+                見た目だけでは決まらない、“その子らしさ”。<br><br>
+
+                MaisonMaidは、<br>
+                貴方だけのメイドさんと出会うための場所です。</p>
+
+              <div class="d-inline-flex align-items-center gap-4">
+                <!-- Button -->
+                <a class="btn btn-new btn-primary rounded-pill" href="concept.html">
+                  <span class="btn-text"><span>コンセプト</span></span>
+                  <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center wow fadeInRight">
+              <div class="position-relative d-inline-flex">
+                <img class="img-fluid rounded-5" src="../../src/img/com3d/about.jpg" alt="">
+
+                <div class="position-absolute top-0 end-0">
+                  <!-- Circle Text -->
+                  <div class="circle-text bg-white border border-2 border-primary mt-5 me-5 wow bounceIn"
+                    data-wow-delay="0.5s">
+                    <svg viewBox="0 0 500 500">
+                      <defs>
+                        <path id="circlePath"
+                          d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250">
+                        </path>
+                      </defs>
+                      <text class="text-uppercase fw-700 ls-4">
+                        <textPath xlink:href="#circlePath">Luxury Maid ✦ Experience ✦ </textPath>
+                      </text>
+                    </svg>
+                    <div class="circle-icon text-bg-primary translate-middle"><i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                  </div>
+                  <!-- Circle Text End -->
+                </div>
+
+                <div class="position-absolute bottom-0 start-50 translate-middle-x w-100">
+                  <div class="text-light text-start bg-dark bg-opacity-50 rounded-5 m-5 p-4 wow fadeInUp">
+                    COM3D2プレイヤーのための<br>
+                    ファンメイドコンパニオンサイト</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About end -->
+
+
+      <!-- Blog/News
+			============================================= -->
+      <section class="section bg-light-1">
+        <div class="container">
+          <!-- Heading -->
+          <div class="mx-auto text-center mb-5">
+            <p class="wow fadeInUp"><span
+                class="text-3 text-uppercase fw-600 rounded-pill border border-dark border-opacity-10 px-3 py-1">What's
+                New</span></p>
+            <h2 class="heading-font-family text-13 fw-600 lh-sm wow fadeInUp" data-wow-delay=".2s">Explore Our <span
+                class="text-primary">Latest <br class="d-none d-md-block">News</span> and Events</h2>
+          </div>
+          <!-- Heading End -->
+
+          <div class="row justify-content-center g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp">
+              <div class="blog-post card h-100 rounded-5 shadow-none border-0">
+                <a class="d-flex rounded-5 overflow-hidden" href="blog-single-post.html">
+                  <img class="card-img-top rounded-5" src="../../src/img/com3d/blog/post-1.jpg" alt="">
+                  <div
+                    class="position-absolute top-0 start-0 text-2 fw-600 bg-primary text-light rounded-pill px-2 py-0 mt-4 ms-4">
+                    Event</div>
+                </a>
+                <div class="card-body p-4">
+                  <ul class="meta-blog text-2 mb-2">
+                    <li><i class="fa-solid fa-calendar-alt"></i> 27 Nov 2025</li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i> Admin</a></li>
+                  </ul>
+                  <h3 class="title-blog text-6 lh-sm mb-2"><a class="text-6" href="blog-single-post.html">Recap of
+                      Recent Events Hosted at Our Hotel</a></h3>
+                  <p class="text-3 text-body-secondary mb-1">Step inside the highlights of the unforgettable moments
+                    recently...</p>
+                  <a href="blog-single-post.html"
+                    class="text-3 fw-600 link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-0-hover">Read
+                    more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".2s">
+              <div class="blog-post card h-100 rounded-5 shadow-none border-0">
+                <a class="d-flex rounded-5 overflow-hidden" href="blog-single-post.html">
+                  <img class="card-img-top rounded-5" src="../../src/img/com3d/blog/post-2.jpg" alt="">
+                  <div
+                    class="position-absolute top-0 start-0 text-2 fw-600 bg-primary text-light rounded-pill px-2 py-0 mt-4 ms-4">
+                    Restaurant</div>
+                </a>
+                <div class="card-body p-4">
+                  <ul class="meta-blog text-2 mb-2">
+                    <li><i class="fa-solid fa-calendar-alt"></i> 14 Oct 2025</li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i> Admin</a></li>
+                  </ul>
+                  <h3 class="title-blog text-6 lh-sm mb-2"><a class="text-6" href="blog-single-post.html">Meet Our Chef:
+                      Culinary Inspiration Stories</a></h3>
+                  <p class="text-3 text-body-secondary mb-1">Discover the passion, creativity, and flavors behind our
+                    kitchen...</p>
+                  <a href="blog-single-post.html"
+                    class="text-3 fw-600 link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-0-hover">Read
+                    more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".4s">
+              <div class="blog-post card h-100 rounded-5 shadow-none border-0">
+                <a class="d-flex rounded-5 overflow-hidden" href="blog-single-post.html">
+                  <img class="card-img-top rounded-5" src="../../src/img/com3d/blog/post-3.jpg" alt="">
+                  <div
+                    class="position-absolute top-0 start-0 text-2 fw-600 bg-primary text-light rounded-pill px-2 py-0 mt-4 ms-4">
+                    Travel</div>
+                </a>
+                <div class="card-body p-4">
+                  <ul class="meta-blog text-2 mb-2">
+                    <li><i class="fa-solid fa-calendar-alt"></i> 15 Jul 2025</li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i> Admin</a></li>
+                  </ul>
+                  <h3 class="title-blog text-6 lh-sm mb-2"><a class="text-6" href="blog-single-post.html">Business
+                      Travel Tips for a Productive Stay</a></h3>
+                  <p class="text-3 text-body-secondary mb-1">Make the most of every work trip with our expert tips
+                    designed..</p>
+                  <a href="blog-single-post.html"
+                    class="text-3 fw-600 link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-0-hover">Read
+                    more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog/News end -->
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+		============================================= -->
+    <footer id="footer" class="footer-dark">
+      <div class="hero-wrap section pb-0">
+        <div class="hero-mask opacity-9 bg-black"></div>
+        <div class="hero-bg hero-bg-scroll" style="background-image:url('../../src/img/com3d/footer-bg.jpg');"></div>
+        <div class="hero-content">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-sm-7 col-md-6 col-lg-4">
+                <div class="mb-4"><a href="index.html"><img src="../../src/img/com3d/logo.png" alt=""></a></div>
+                <p class="text-3">Unofficial fan site for CUSTOM ORDER MAID 3D2 by KISS.</p>
+                <p class="text-3">Character showcases, presets,
+                  guides and companion tools
+                  for COM3D2 players.</p>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-3 ms-auto">
+                <ul class="nav flex-column fw-500">
+                  <li class="nav-item"> <a class="nav-link" href="about-us.html">Privacy Policy</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="about-us.html">Disclaimer</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="about-us.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="mt-3">
+                  <ul class="social-icons social-icons-light">
+                    <li><a data-bs-toggle="tooltip" href="https://x.com/maisonmaid" target="_blank" title="X"><i
+                          class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a data-bs-toggle="tooltip" href="https://github.com/maisonmaid" target="_blank"
+                        title="GitHUb"><i class="fa-brands fa-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              <div class="row gy-3">
+                <div class="col-lg">
+                  <p class="text-3 text-center mb-2">Copyright &copy; MaisonMaid.</p>
+                  <p class="text-3 text-center mb-0">This website is an unofficial fan-made project and is not
+                    affiliated with <a
+                      class="fw-500 link-primary link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                      href="https://www.kisskiss.tv/">KISS</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back to Top
+	============================================= -->
+  <a id="back-to-top" href="javascript:void(0)"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/lenis.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <script src="js/jarallax.min.js"></script>
+  <!-- Datepicker -->
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.min.js"></script>
+  <script src="js/daterangepicker-custom.js"></script>
+  <!-- Custom Script -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
