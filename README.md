@@ -1,2 +1,2 @@
 # maisonmaid-web
-Unofficial KISS fan site and preset discovery project.
+Unofficial COM3D2 Fan Site and preset discovery project.

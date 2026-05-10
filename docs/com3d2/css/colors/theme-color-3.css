@@ -1,0 +1,40 @@
+/*================================================
+		Theme Color - Deep Burgundy
+==================================================*/
+:root,
+[data-bs-theme="light"] {
+  --bs-themecolor: #df708c;
+  --bs-themecolor-rgb: 223, 112, 140;
+  --bs-themehovercolor: #d85375;
+  --bs-themehovercolor-rgb: 216.472, 82.828, 116.54;
+  --bs-link-color: var(--bs-themecolor);
+  --bs-link-color-rgb: var(--bs-themecolor-rgb);
+  --bs-link-hover-color: var(--bs-themehovercolor);
+  --bs-link-hover-color-rgb: var(--bs-themehovercolor-rgb);
+  --bs-success: #09b850;
+  --bs-success-rgb: 9, 184, 80;
+  --bs-primary: var(--bs-themecolor);
+  --bs-primary-rgb: var(--bs-themecolor-rgb);
+  --bs-primary-text-emphasis: #592d38;
+  --bs-primary-bg-subtle: #f9e2e8;
+  --bs-primary-border-subtle: #f2c6d1;
+  --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-secondary: #9d9fa4;
+  --bs-secondary-rgb: 157, 159, 164;
+  --bs-heading-color: var(--bs-emphasis-color);
+  --bs-body-font-family: Poppins, sans-serif;
+  --bs-heading-font-family: Poppins, sans-serif;
+  --bs-body-font-size: 1.125rem;
+}
+
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --bs-link-color: var(--bs-themecolor);
+  --bs-link-color-rgb: var(--bs-themecolor-rgb);
+  --bs-link-hover-color: var(--bs-themehovercolor);
+  --bs-link-hover-color-rgb: var(--bs-themehovercolor-rgb);
+  --bs-heading-color: var(--bs-emphasis-color);
+  --bs-body-color: #dee2e6;
+  --bs-body-color-rgb: 222, 226, 230;
+}
