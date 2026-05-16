@@ -63,6 +63,7 @@
 			"card wow fadeInUp col-6 col-md-6 col-lg-4 col-xl-3";
 
 		card.dataset.id = character.id;
+		card.title = character.meta.name;
 
 		card.dataset.stats = JSON.stringify(
 			character.analysis.ai.stats
@@ -74,7 +75,7 @@
 		card._character = character;
 
 		card.innerHTML = `
-		<a href="${character.meta.url}" target="_blank">
+		<a href="${character.meta.url}" target="_blank" rel="noopener noreferrer">
 			<div class="card-image">
 				<img src="${character.meta.img}">
 			</div>

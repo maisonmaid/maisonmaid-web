@@ -20,5 +20,4 @@ jobs:
       - name: Sync images to R2
         run: |
           aws s3 sync src/img s3://maisonmaid-img \
-            --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
-            --delete
+            --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
