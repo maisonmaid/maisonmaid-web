@@ -9,9 +9,9 @@
 	<meta name="author" content="MaisonMaid">
 
 	<!-- Primary Meta -->
-	<title>Cast Search | COM3D2ファンサイト | MaisonMaid</title>
+	<title>Guest Room | COM3D2ファンサイト | MaisonMaid</title>
 	<meta name="title" content="COM3D2ファンサイト | MaisonMaid">
-	<meta name="description" content="「甘えたい」「一途」「安心感がほしい」などの感覚から、COM3D2のキャラクター・拡張パックを探せるデータベース。">
+	<meta name="description" content="オーナーたちが招待したメイドたちを紹介する、コミュニティ共有ルームです。プリセット、必要DLC、バージョン情報、キャスト解釈などを掲載しています。">
 
 	<!-- OGP -->
 	<meta property="og:type" content="website">
@@ -39,7 +39,7 @@
 	<link rel="stylesheet" type="text/css" href="css/daterangepicker.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-	<link rel="stylesheet" type="text/css" href="css/cast.css">
+	<link rel="stylesheet" type="text/css" href="css/guest.css">
 </head>
 
 <body>
@@ -114,83 +114,13 @@
 					style="background-image:url('../../src/img/com3d/slider/slide-2.jpg');"></div>
 				<div class="hero-content py-2 py-lg-4 my-2 my-md-4">
 					<div class="container text-center">
-						<h1 class="text-17 wow fadeInUp">Cast</h1>
+						<h1 class="text-17 wow fadeInUp">Guest Room</h1>
 						<ul class="breadcrumb justify-content-center mb-0 wow fadeInUp" data-wow-delay=".2s">
 							<li><a href="./">Home</a></li>
-							<li class="active">Cast</li>
+							<li class="active">Guest Room</li>
 						</ul>
 
-						<form id="castSearch" method="get">
-							<div class="bg-black bg-opacity-75 p-4 p-lg-3 mt-4">
-								<div class="row gy-3 gx-lg-0 input-group">
 
-									<div class="col-md-6 col-lg">
-										<label class="form-label text-3 fw-600" for="searchCheckIn">判定基準</label>
-										<select class="form-select mh-100" title="判定基準" id="judge" name="judge">
-											<option value="">[判定基準]</option>
-											<option value="ai" title="公式テキストを基にAIが分析">公式テキスト(AI)</option>
-											<option value="maisonmaid" title="MaisonMaidが音声だけで分析">声(準備中)</option>
-										</select>
-									</div>
-
-									<div class="col-md-6 col-lg">
-										<label class="form-label text-3 fw-600" for="searchCheckIn">性格</label>
-										<select class="form-select mh-100" title="性格" id="tag" name="tag" multiple>
-											<option value="">[性格]</option>
-											<option value="甘えたがり">甘えたがり</option>
-											<option value="一途">一途</option>
-											<option value="お姉さん">お姉さん</option>
-											<option value="妹系">妹系</option>
-											<option value="包容力">包容力</option>
-											<option value="人懐っこい">人懐っこい</option>
-											<option value="不器用">不器用</option>
-											<option value="クール">クール</option>
-											<option value="小悪魔">小悪魔</option>
-											<option value="ドS">ドS</option>
-											<option value="ドM">ドM</option>
-											<option value="真面目">真面目</option>
-											<option value="素直">素直</option>
-											<option value="明るい">明るい</option>
-											<option value="ツンツン">ツンツン</option>
-											<option value="ヤンデレ気質">ヤンデレ気質</option>
-										</select>
-									</div>
-
-									<div class="col-md-6 col-lg">
-										<label class="form-label text-3 fw-600" for="searchCheckIn">距離感</label>
-										<select class="form-select mh-100" title="距離感" id="distance" name="distance">
-											<option value="">[距離感]</option>
-											<option value="high">近め</option>
-											<option value="mid">中間</option>
-											<option value="low">遠め</option>
-										</select>
-									</div>
-									<div class="col-md-6 col-lg">
-										<label class="form-label text-3 fw-600" for="searchCheckIn">安心感</label>
-										<select class="form-select mh-100" title="安心感" id="comfort" name="comfort">
-											<option value="">[安心感]</option>
-											<option value="high">高</option>
-											<option value="mid">中</option>
-											<option value="low">低</option>
-										</select>
-									</div>
-									<div class="col-md-6 col-lg">
-										<label class="form-label text-3 fw-600" for="searchCheckIn">疲れやすさ</label>
-										<select class="form-select mh-100" title="疲れやすさ" id="fatigue" name="fatigue">
-											<option value="">[疲れやすさ]</option>
-											<option value="high">高</option>
-											<option value="mid">中</option>
-											<option value="low">低</option>
-										</select>
-									</div>
-									<div class="col-md-6 col-lg">
-										<label class="form-label text-3 fw-600" for="searchCheckIn">検索</label>
-										<button class="btn btn-primary text-nowrap mh-100" type="submit">Find Your
-											Cast</button>
-									</div>
-								</div>
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>
@@ -206,18 +136,39 @@
 			<section class="section castsection">
 				<div class="container">
 
-					<!-- Heading -->
-					<div class="mx-auto text-center mb-5">
-						<p class="wow fadeInUp"><span
-								class="text-3 text-uppercase fw-600 rounded-pill border border-dark border-opacity-10 px-3 py-1">Official
-								Cast</span></p>
-						<h2 class="heading-font-family text-13 fw-600 lh-sm wow fadeInUp" data-wow-delay=".2s">Meet the
-							<span class="text-primary">Cast</span>
-						</h2>
-					</div>
 					<!-- Heading End -->
 					<div class="container gallery-container">
+						<p class="mb-4">オーナーたちが招待したメイドたちを紹介する、コミュニティ共有ルームです。<br>プリセット、必要DLC、バージョン情報、キャスト解釈などを掲載しています。
+						</p>
 						<div id="gallery" class="gallery row g-3"></div>
+					</div>
+
+					<!-- モーダルを開くボタン -->
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						モーダルを開く
+					</button>
+
+					<!-- モーダル本体 -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">モーダルタイトル</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="閉じる"></button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="modal-image col-md-4"></div>
+										<div class="modal-detail col-md-8">モーダルの内容がここに表示されます。</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a class="btn btn-primary" target="_blank">ダウンロードサイトへ</a>
+								</div>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -252,7 +203,6 @@
 									<li class="nav-item">[Contents]</li>
 									<li class="nav-item"> <a class="nav-link" href="concept.html">Concept</a></li>
 									<li class="nav-item"> <a class="nav-link" href="cast.html">Cast</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="guest.html" title="Guest Room">Guest</a></li>
 									<li class="nav-item"> <a class="nav-link" href="info.html">Information</a></li>
 								</ul>
 							</div>
@@ -309,7 +259,7 @@
 	<script src="js/daterangepicker-custom.js"></script>
 	<!-- Custom Script -->
 	<script src="js/main.js"></script>
-	<script src="js/cast.js"></script>
+	<script src="js/guest.js"></script>
 
 	<script type="module">
 		import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'

@@ -150,7 +150,7 @@
 	function updateURL(filters) {
 
 		const params = new URLSearchParams();
-		console.info(params);
+		//console.info(params);
 
 		if (filters.distance) {
 			params.set("distance", filters.distance);
