@@ -21,11 +21,15 @@
 	 */
 	async function fetchCharacters() {
 
-		const response = await fetch(
-			"https://img.maisonmaid.com/com3d/json/official_presets.json"
-		);
+		const [officialResponse, guestResponse] = await Promise.all([
+			fetch("https://img.maisonmaid.com/com3d/json/official_presets.json"),
+			fetch("https://img.maisonmaid.com/com3d/json/guest_presets.json")
+		]);
+		const official = await officialResponse.json();
+		const guest = await guestResponse.json();
 
-		return await response.json();
+		// 配列同士を結合
+		return [...official, ...guest];
 	}
 
 	/**
@@ -56,7 +60,7 @@
 		const card = document.createElement("div");
 
 		card.className =
-			"card wow fadeInUp col-4 col-md-3 col-lg-2 col-xl-2";
+			`card wow fadeInUp col-4 col-md-3 col-lg-2 col-xl-2 ${character.category}`;
 
 		card.dataset.id = character.id;
 		card.title = character.name;
@@ -90,8 +94,6 @@
 
 		modal.querySelector('.modal-detail').innerHTML = `
 			<dl class="modal-list">
-			  <dt>カテゴリ</dt>
-			  <dd>${card.category}</dd>
 			  <dt>MOD</dt>
 			  <dd>${card.mod.join(",")}</dd>
 			  <dt>拡張</dt>
@@ -100,7 +102,17 @@
 			  <dd>${card.meta}</dd>
 			</dl>
 		`
-		modal.querySelector('.btn-primary').href = card.url;
+		if (card.category == "official") {
+			modal.querySelector('.com3d2').classList.add('d-none');
+			modal.querySelector('.credit').classList.add('d-none');
+			modal.querySelector('.site').href = card.url;
+		} else {
+			modal.querySelector('.com3d2').classList.remove('d-none')
+			modal.querySelector('.com3d2').href = card.url.com3d2;
+			modal.querySelector('.credit').classList.remove('d-none')
+			modal.querySelector('.credit').href = card.url.credit;
+			modal.querySelector('.site').href = card.url.site;
+		}
 	})
 
 	function updateGallery() {

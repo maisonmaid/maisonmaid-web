@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ren01",
+    "name": "冬風蓮",
+    "category": "guest",
+    "mod": [],
+    "append": [],
+    "meta": [],
+    "image": "https://img.maisonmaid.com/com3d/guest/800_ren_toufu_credit.png",
+    "url": {
+        "com3d2": "https://img.maisonmaid.com/com3d/guest/pre_ren_toufu_com3d2.preset",
+        "credit": "https://img.maisonmaid.com/com3d/guest/800_ren_toufu_credit.preset",
+        "site": "https://maisonmaid.com/"
+    }
+  }
+]
