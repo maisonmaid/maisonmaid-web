@@ -23,7 +23,7 @@
 
 		const [officialResponse, guestResponse] = await Promise.all([
 			fetch("https://img.maisonmaid.com/com3d/json/official_presets.json"),
-			fetch("https://img.maisonmaid.com/com3d/json/guest_presets.json")
+			fetch("https://img.maisonmaid.com/com3d/json/guest_presets.json?260518")
 		]);
 		const official = await officialResponse.json();
 		const guest = await guestResponse.json();
