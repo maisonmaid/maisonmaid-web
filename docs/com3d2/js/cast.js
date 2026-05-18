@@ -26,7 +26,7 @@
 	async function fetchCharacters() {
 
 		const response = await fetch(
-			"https://img.maisonmaid.com/com3d/json/official.json"
+			"https://img.maisonmaid.com/com3d/json/official2.json"
 		);
 
 		return await response.json();
@@ -66,7 +66,7 @@
 		card.title = character.meta.name;
 
 		card.dataset.stats = JSON.stringify(
-			character.analysis.ai.stats
+			character.voice
 		);
 
 		card.dataset.tags =
@@ -98,10 +98,6 @@
 		setValue("distance", params.get("distance"));
 		setValue("comfort", params.get("comfort"));
 		setValue("fatigue", params.get("fatigue"));
-		setValue(
-			"judge",
-			params.get("judge") || "ai"
-		);
 
 		// tag複数対応
 		const tags = params.getAll("tag");
@@ -132,10 +128,6 @@
 			fatigue:
 				document.getElementById("fatigue").value,
 
-
-			judge:
-				document.getElementById("judge").value,
-
 			tags: [...select.selectedOptions]
 				.map(option => option.value)
 				.filter(Boolean)
@@ -164,10 +156,6 @@
 			params.set("fatigue", filters.fatigue);
 		}
 
-		if (filters.judge) {
-			params.set("judge", filters.judge);
-		}
-
 		filters.tags.forEach(tag => {
 			params.append("tag", tag);
 		});
@@ -189,42 +177,6 @@
 		updateGallery();
 	}
 
-	function getFilters() {
-
-		const select = document.getElementById("tag");
-
-		return {
-
-			judge:
-				document.getElementById("judge").value,
-
-			distance:
-				document.getElementById("distance").value,
-
-			comfort:
-				document.getElementById("comfort").value,
-
-			fatigue:
-				document.getElementById("fatigue").value,
-
-			tags: [...select.selectedOptions]
-				.map(option => option.value)
-				.filter(Boolean)
-		};
-	}
-
-	function getStats(character, judge) {
-
-		if (judge === "1") {
-			return character.analysis.maisonmaid.stats;
-		}
-
-		return character.analysis.ai.stats;
-
-	}
-
-
-
 	function updateGallery() {
 
 		const filters = getFilters();
@@ -237,10 +189,7 @@
 
 		cards.forEach(card => {
 
-			const stats = getStats(
-				card._character,
-				filters.judge
-			);
+			const stats = card._character.voice;
 
 			const tags =
 				card.dataset.tags.split(",");
