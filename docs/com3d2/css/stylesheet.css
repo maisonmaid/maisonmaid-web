@@ -4521,3 +4521,15 @@ input:-internal-autofill-selected {
   left: -40px;
   border-radius: 4px 0px 0px 4px;
 }
+
+
+.kiss i {
+  font-style: normal;
+  margin-left: 5px;
+}
+
+@media (max-width: 575.98px) {
+  .kiss i {
+    display: none;
+  }
+}
