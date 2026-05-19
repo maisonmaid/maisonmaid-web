@@ -6,17 +6,21 @@
     "dev": "vite",
     "dev-py": "py -m http.server 8000 -d docs",
 
-    "extract": "py tools/extractVoiceParams.py",
     "convert": "py tools/convertAudioToWav.py",
+    "extract": "py tools/extractVoiceParams.py",
+
     "preset": "py tools/extractPresetData.py",
     "presetAssets": "py tools/extractPresetAssets.py",
     "presetMeta": "py tools/extractPresetMetadata.py",
     "presetImage": "py tools/extractPresetImages.py",
-    "scrape": "py tools/scrapeWikiData.py",
-    "wiki": "py tools/buildWikiLookup.py"
+
+    "scrapeWiki": "py tools/scrapeWikiData.py",
+    "buildLookup": "py tools/buildWikiLookup.py",
+    "build": "py tools/buildOfficialPresets.py",
+    
+    "analyze": "py tools/archive/analyzePresetColors.py"
   },
   "devDependencies": {
-    "vite": "^7.1.0",
-    "sass": "^1.89.2"
+    "vite": "^7.1.0"
   }
 }
