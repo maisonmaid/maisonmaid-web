@@ -4,21 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "dev-py": "py -m http.server 8000 -d docs",
-
-    "convert": "py tools/convertAudioToWav.py",
-    "extract": "py tools/extractVoiceParams.py",
-
-    "preset": "py tools/extractPresetData.py",
-    "presetAssets": "py tools/extractPresetAssets.py",
-    "presetMeta": "py tools/extractPresetMetadata.py",
-    "presetImage": "py tools/extractPresetImages.py",
-
-    "scrapeWiki": "py tools/scrapeWikiData.py",
-    "buildLookup": "py tools/buildWikiLookup.py",
-    "build": "py tools/buildOfficialPresets.py",
-    
-    "analyze": "py tools/archive/analyzePresetColors.py"
+    "dev-py": "py -m http.server 8000 -d docs"
   },
   "devDependencies": {
     "vite": "^7.1.0"

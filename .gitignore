@@ -30,6 +30,4 @@ out/
 # *.rar
 
 template/
-presets/
-tools/
 .vite
