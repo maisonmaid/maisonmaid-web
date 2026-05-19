@@ -32,3 +32,4 @@ out/
 template/
 presets/
 tools/
+.vite
